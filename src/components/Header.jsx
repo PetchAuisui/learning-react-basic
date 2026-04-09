@@ -1,6 +1,11 @@
+import "./Header.css";
+
 const Header = () => {
     return (
-        <h1>Learning React Basic</h1>
+        <nav>
+            <h1>Learning React Basic</h1>
+            <button>Light/Dark</button>
+        </nav>
     )
 }
 
