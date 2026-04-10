@@ -1,9 +1,9 @@
 import "./Header.css";
 
-const Header = () => {
+const Header = (props) => {
     return (
         <nav>
-            <h1>Learning React Basic</h1>
+            <h1>{props.title}</h1>
             <button>Light/Dark</button>
         </nav>
     )
