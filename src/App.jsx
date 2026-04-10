@@ -14,11 +14,16 @@ function App() {
     
   ]);
 
+  function deleteUser(id) {
+    const result = data.filter(item => item.id !== id);
+    setData(result)
+  }
+
   return (
     <div className="App">
       <Header title="Learning React Basic" />
       <main>
-        <PersonList data={data} />
+        <PersonList data={data} deleteUser={deleteUser} />
       </main>
     </div>
   )
