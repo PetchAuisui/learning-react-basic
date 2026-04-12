@@ -1,5 +1,6 @@
 import Header from './components/Header.jsx';
 import PersonList from './components/PersonList.jsx';
+import Addform from './components/AddForm.jsx';
 import './App.css';
 import { useState } from 'react';
 
@@ -23,6 +24,7 @@ function App() {
     <div className="App">
       <Header title="Learning React Basic" />
       <main>
+        <Addform />
         <PersonList data={data} deleteUser={deleteUser} />
       </main>
     </div>
