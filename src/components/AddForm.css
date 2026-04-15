@@ -1,45 +1,54 @@
-.container{
-    max-width: 800px;
+.container {
+    max-width: 1000px;
     margin: 10px auto;
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
-form{
+form {
     display: flex;
     align-items: center;
 }
 
-label{
+label {
     font-size: 20px;
 }
 
-input{
+input {
     font-size: 18px;
     padding: 7px;
     border: 1px solid gray;
     border-radius: 5px;
-    flex-grow: 1;
     margin: 10px;
 }
 
-input:focus{
+.name-input {
+    flex: 3;
+}
+
+.age-input {
+    flex: 1;
+    max-width: 100px;
+}
+
+input:focus {
     outline: none;
 }
 
-select{
+select {
     font-size: 18px;
     padding: 7px;
     margin: 10px;
     border-radius: 5px;
 }
 
-.btn-save{
+.btn-save {
     font-size: 18px;
     padding: 7px 20px;
     margin: 10px;
     background-color: green;
 }
-.btn-save:disabled{
+
+.btn-save:disabled {
     background: gray;
 }

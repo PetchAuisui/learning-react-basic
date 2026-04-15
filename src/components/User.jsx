@@ -6,7 +6,7 @@ export default function User({item , deleteUser }) {
         <>
           <li key={item.id} style={{borderStyle:"solid",borderColor:item.gender=="male" ? "blue" : "pink"}}>
               <img src={item.gender == "male" ? boy : girl} width={50} height={50}/>
-              <p> ชื่อ: {item.name} อายุ: {item.age} เพศ: {item.gender}</p>
+              <p> ชื่อ: {item.name} อายุ: {item.age}</p>
               <div className="control">
                 <button style={{background:"red"}} onClick={() => deleteUser(item.id)}>Delete</button>
               </div>
